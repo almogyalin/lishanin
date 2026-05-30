@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { signDictionary } from '../data/signDictionary'
 
-const CUNEIFORM_REGEX = /[\u{12000}-\u{1254F}]+/gu
-
 interface Props {
   text: string
   className?: string

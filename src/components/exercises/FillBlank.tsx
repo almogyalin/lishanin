@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import type { FillBlankExercise } from '../../data/types'
-import CuneiformText from '../CuneiformText'
 
 interface Props {
   exercise: FillBlankExercise
