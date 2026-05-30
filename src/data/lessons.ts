@@ -8,7 +8,7 @@ export const lessons: Lesson[] = [
     exercises: [
       {
         type: 'multiple-choice',
-        prompt: 'What does this sign mean?',
+        prompt: 'What does this sign mean?\n(Tip: tap any cuneiform sign to see its translation)',
         display: '𒀭',
         options: ['god/heaven', 'earth', 'man', 'lord'],
         correctIndex: 0,

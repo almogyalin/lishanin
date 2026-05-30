@@ -19,7 +19,7 @@ export default function MultipleChoice({ exercise, onAnswer }: Props) {
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <p style={{ marginBottom: '0.5rem', color: 'var(--color-text-muted)' }}>{exercise.prompt}</p>
+      <p style={{ marginBottom: '0.5rem', color: 'var(--color-text-muted)', whiteSpace: 'pre-line' }}>{exercise.prompt}</p>
       <CuneiformText text={exercise.display} className="cuneiform" style={{ display: 'block', margin: '1rem 0', fontSize: '3.5rem' }} />
       <div style={{ display: 'grid', gap: '0.5rem', maxWidth: 400, margin: '0 auto' }}>
         {exercise.options.map((opt, i) => (
