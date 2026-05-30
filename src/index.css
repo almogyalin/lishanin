@@ -1,0 +1,59 @@
+:root {
+  --color-primary: #2d5016;
+  --color-primary-light: #4a7c23;
+  --color-bg: #faf9f6;
+  --color-surface: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666;
+  --color-correct: #2e7d32;
+  --color-incorrect: #c62828;
+  --color-border: #e0e0e0;
+  --radius: 8px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.cuneiform {
+  font-family: 'Noto Sans Cuneiform', serif;
+  font-size: 2.5rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover { background: var(--color-primary-light); }
+
+.btn-option {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  padding: 0.75rem 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.btn-option:hover { border-color: var(--color-primary); }
+.btn-option.correct { border-color: var(--color-correct); background: #e8f5e9; }
+.btn-option.incorrect { border-color: var(--color-incorrect); background: #ffebee; }
+.btn-option.selected { border-color: var(--color-primary); background: #e8f0e0; }
+.btn-option.matched { border-color: var(--color-correct); background: #e8f5e9; opacity: 0.7; pointer-events: none; }
