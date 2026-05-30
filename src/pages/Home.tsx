@@ -80,7 +80,7 @@ export default function Home() {
             >
               <span style={{
                 width: 36, height: 36, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                background: status === 'completed' ? 'var(--color-correct)' : 'var(--color-primary)',
+                background: status === 'completed' ? 'var(--color-correct)' : '#666',
                 color: 'white', fontWeight: 700, fontSize: '0.875rem',
               }}>
                 {status === 'completed' ? '✓' : i + 1}
